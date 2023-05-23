@@ -1,0 +1,20 @@
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: koa-hello
+  name: koa-hello
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: koa-hello
+  template:
+    metadata:
+      labels:
+        app: koa-hello
+    spec:
+      containers:
+      - image: kk0829/koa-hello:latest
+        name: koa-hello
