@@ -1,0 +1,10 @@
+
+apiVersion: source.toolkit.fluxcd.io/v1beta2
+kind: GitRepository
+metadata:
+  name: koa-hello
+spec:
+  interval: 5s
+  ref:
+    branch: main
+  url: https://github.com/kk0829/fluxcd-demo

@@ -16,5 +16,5 @@ spec:
         app: koa-hello
     spec:
       containers:
-      - image: kk0829/koa-hello:latest
+      - image: kk0829/koa-hello:v1
         name: koa-hello
